@@ -1,8 +1,13 @@
 class Triangle extends Shape{
-    public  Triangle(int sideLength){
-        //parent class variable accessible in child class
-       this.sides = 3;
-       this.sideLength = sideLength;
-       this.name = "triangle";
+    private int height, base;
+
+    public Triangle(int height, int base) {
+        this.height = height;
+        this.base = base;
+    }
+
+    @Override
+    public double calculateArea(){
+        return 0.5*height*base;
     }
 }
