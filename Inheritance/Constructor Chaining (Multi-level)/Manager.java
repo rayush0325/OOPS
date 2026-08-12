@@ -5,6 +5,6 @@ class Manager extends Employee{
         this.teamSize = teamSize;
     }
     public void printDetails(){
-        System.out.println();
+        System.out.println();//
     }
 }

@@ -3,6 +3,6 @@ class Employee extends Person{
 
     public Employee(String name, int age, int employee_id){
         super(name, age);
-        this.employee_id = employee_id;
+        this.employee_id = employee_id;//
     }
 }
