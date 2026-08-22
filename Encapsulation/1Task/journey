@@ -1,0 +1,37 @@
+Design a BankAccount class that stores the following information:
+
+Account number (String)
+
+Account holder name (String)
+
+Balance (double)
+
+Requirements:
+
+The account number and holder name must be provided at creation and cannot be changed afterwards.
+
+The balance starts at zero, but a constructor can also accept an initial balance (must be non-negative).
+
+Provide a deposit(double amount) method that increases the balance. The amount must be positive.
+
+Provide a withdraw(double amount) method that decreases the balance. The amount must be positive and cannot exceed the current balance.
+
+Provide a getBalance() method to check the balance.
+
+Provide getters for account number and holder name.
+
+The internal balance must never be directly modifiable from outside the class.
+
+//decision
+made string private to enforce data hiding or direct data access
+
+generated constructor to initialise value during object creation
+
+generated constructor BankAccount(String holderName, int accountNumber) for the case
+    where customer don't have any initial balance
+    and performed constructor chaining to initialise all the values and reduce code
+created deposit method to
+    allow user to update balance
+    perform validation
+    hide internal logic from external code
+created getters to allow users to read values of private variables
