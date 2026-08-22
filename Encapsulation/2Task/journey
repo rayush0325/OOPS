@@ -1,0 +1,39 @@
+Design two classes: Book and Library.
+
+Book:
+
+Fields: title (String), author (String), ISBN (String). All are immutable after creation.
+
+Provide a constructor and getters for each field.
+
+Override equals and hashCode based on ISBN (since ISBN is unique).
+
+Library:
+
+Maintains a collection of Book objects.
+
+Provides addBook(Book book) to add a book. If a book with the same ISBN already exists, do not add it again (or throw an exception—your choice, but document it).
+
+Provides removeBook(String isbn) to remove a book by ISBN.
+
+Provides findByTitle(String title) that returns a list of books with the given title (case-insensitive). If none, return an empty list.
+
+
+The internal collection must be completely hidden from outside code.
+
+//decisions
+
+overridden equal method  to compare book objects on the equality of ISBN number
+set book collection as private to restrict direct access and hence manipulation of books collection
+returned book collection containing copy of original book so that user don't get access to original book reference
+used Map to store books to
+    check for presence of book in constant TC
+
+concepts used
+    method overriding
+    custom logic for equal() of object class
+    Map collection
+challenge faced
+    while overriding object class - I set Book type object parameters
+    this method signature was different from that of Object class
+    so I set parameters as Object Type and type casted that object to book type
