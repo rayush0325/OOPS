@@ -3,4 +3,4 @@ public class Main{
         Duck duck = new Duck();
         duck.move();
     }
-}
+}ā

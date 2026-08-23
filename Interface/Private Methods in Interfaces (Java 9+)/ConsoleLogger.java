@@ -1,0 +1,3 @@
+class ConsoleLogger implements Logger{
+
+}

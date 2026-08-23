@@ -8,5 +8,5 @@ class Duck implements Flyable, Swimmable{
     }
     //default modifier not allowed in implementing class for overriden default methods
     //access modifier of overriden method must be wider in implementing classes
-    //Interface name is required  to call parent interface method
+    //Interface name is required  to call parent interface default method
 }
