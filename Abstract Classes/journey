@@ -1,0 +1,22 @@
+Create a Java program that models different geometric shapes: Circle, Rectangle, and Triangle.
+
+Requirements:
+
+Each shape must have a color and a name.
+
+Each shape must provide methods to calculate:
+
+area()
+
+perimeter()
+
+Each shape must provide a draw() method that prints a description of the shape (e.g., "Drawing a red Circle with radius 5").
+
+The shapes should be stored in a List and processed polymorphically (e.g., iterate and call area(), perimeter(), and draw() on each).
+
+The solution should avoid code duplication for common properties and methods.
+
+//decision
+use abstract class
+    to define variables color and name and common method display()
+    and define perimeter() method as abstract
